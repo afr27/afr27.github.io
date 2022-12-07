@@ -1,73 +1,103 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <title>Belajar HTML5</title>
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <!-- Meta -->
     <meta charset="UTF-8">
-    <style>
-      body {
-        font-family: Verdana, Sans-Serif;
-        font-size: 12px;
-      }
-      header, nav, main, aside, footer {
-        border: 3px solid;
-        margin: 5px;
-        padding: 5px;
-      }
-      main {
-        float: left;
-        width: 60%;
-      }
-      aside {
-        float: left;
-        width: 30%;
-      }
-      footer {
-        clear: both;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Belajar Programming</h1>
-      <h2>Bersama sekolah koding</h2>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Profil</a></li>
-        <li><a href="#">Kontak</a></li>
-      </ul>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Rehanaf MyID</title>
+
+    <!-- link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Nav -->
+    <nav class="text-sky-900 flex justify-between items-stretch py-3 px-10">
+        <div>
+            <span class="text-lg font-medium tracking-widest">RehanAF</span>.
+            <span class="text-sm align-baseline">my.id</span>
+        </div>
+        <div class="flex">
+            <button class="ml-1.5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 hover:stroke-2 hover:stroke-sky-400">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                </svg>
+            </button>
+        </div>
     </nav>
-    <div display="flex">
-      <main>
-        
-        <h1>Daftar pelajaran</h1>
-        
-        <div>
-          <h2>HTML</h2>
-          <p>membuat struktur website dengan html</p>
+
+    <!-- Main -->
+    <div class="p-20">
+        <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-28 h-28 m-auto">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+            </svg>
+            <div class="text-center">
+                <h1 class="text-sky-900 text-3xl font-medium p-3 border-b-2 border-slate-200">Rehan Abu Faqih</h1>
+                <p class="text-gray-400">Junior Web Developer</p>
+            </div>
         </div>
-        
-        <div>
-          <h2>CSS</h2>
-          <p>menghias website dengan css</p>
-        </div>
-        
-        <div>
-          <h2>Javascript</h2>
-          <p>membuat website lebih interaktif dengan javascript</p>
-        </div>
-        
-      </main>
-      <aside>
-        <h2>Daftar Artikel</h2>
-        <a href="#">Intro html</a>
-        <a href="#">mulai belajar website</a>
-        <a href="#">Berguru sampai negeri koding</a>
-      </aside>
     </div>
-    <footer>
-      <p>&copy; 2016 Sekolah Koding</p>
+    <div class="m-6">
+        <div class="p-3 border-y-4 border-slate-200 pl-8 flex items-center justify-between">
+            <h2 class="text-xl font-medium">Skills</h2>
+        </div>
+        <div class="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-none">
+            <div class="m-6 border-2 border-slate-200 rounded-2xl shadow-lg h-fit">
+                <h3 class="text-white bg-orange-400 rounded-t-2xl text-base font-medium p-3 border-b-2 border-slate-200 text-center">HTML</h3>
+                <p class="text-center text-gray-400 p-3">Hyper Text Markup Language</p>
+            </div>
+            <div class="m-6 border-2 border-slate-200 rounded-2xl shadow-lg h-fit">
+                <h3 class="text-white bg-sky-400 rounded-t-2xl text-base font-medium p-3 border-b-2 border-slate-200 text-center">CSS</h3>
+                <p class="text-center text-gray-400 p-3">Hyper Text Markup Language</p>
+            </div>
+            <div class="m-6 border-2 border-slate-200 rounded-2xl shadow-lg h-fit">
+                <h3 class="text-white bg-yellow-400 rounded-t-2xl text-base font-medium p-3 border-b-2 border-slate-200 text-center">JS</h3>
+                <p class="text-center text-gray-400 p-3">Hyper Text Markup Language</p>
+            </div>
+            <div class="m-6 border-2 border-slate-200 rounded-2xl shadow-lg h-fit">
+                <h3 class="text-white bg-purple-600 rounded-t-2xl text-base font-medium p-3 border-b-2 border-slate-200 text-center">PHP</h3>
+                <p class="text-center text-gray-400 p-3">Hyper Text Markup Language</p>
+            </div>
+        </div>
+    </div>
+    <div class="m-6">
+        <h2 class="text-xl font-medium p-3 border-y-4 border-slate-200 pl-8 flex items-center">Portfolio Pilihan</h2>
+        <div class="grid xl:grid-cols-4 sm:grid-cols-2 grid-cols-none">
+            <div class="m-6 border-2 border-slate-200 rounded-2xl shadow-lg h-fit">
+                <img src="img/ss.png" class="w-full rounded-t-2xl">
+                <h3 class="text-base font-medium p-3 border-t-2 border-slate-200 text-center">Apa itu Manusia? Contoh, Jenis-jenis Dalam Kehidupan</h3>
+            </div>
+            <div class="m-6 border-2 border-slate-200 rounded-2xl shadow-lg h-fit">
+                <img src="img/ss.png" class="w-full rounded-t-2xl">
+                <h3 class="text-base font-medium p-3 border-t-2 border-slate-200 text-center">Apa itu Manusia? Contoh, Jenis-jenis Dalam Kehidupan</h3>
+            </div>
+            <div class="m-6 border-2 border-slate-200 rounded-2xl shadow-lg h-fit">
+                <img src="img/ss.png" class="w-full rounded-t-2xl">
+                <h3 class="text-base font-medium p-3 border-t-2 border-slate-200 text-center">Apa itu Manusia? Contoh, Jenis-jenis Dalam Kehidupan</h3>
+            </div>
+            <div class="m-6 border-2 border-slate-200 rounded-2xl shadow-lg h-fit">
+                <img src="img/ss.png" class="w-full rounded-t-2xl">
+                <h3 class="text-base font-medium p-3 border-t-2 border-slate-200 text-center">Apa itu Manusia? Contoh, Jenis-jenis Dalam Kehidupan</h3>
+            </div>
+        </div>
+    </div>
+    <div class="m-6">
+        <h2 class="text-xl font-medium p-3 border-y-4 border-slate-200 pl-8 flex items-center">Sosial Media</h2>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-16 text-sky-900 text-center">
+        <div class="pb-6">-- Dibuat dengan secangkir kopi di malam hari setiap hari --</div>
+        <div>Rehan Abu Faqih - rehanaf287 - &copy; 2022</div>
     </footer>
-  </body>
+    
+    <!-- Script -->
+    <script src="js/main.js"></script>
+</body>
 </html>
