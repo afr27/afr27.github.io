@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:image" content="https://rehanaf.is-a.dev/prev.jpg"/>
+  <meta property="og:image" content="https://rehanaf.is-a.dev/assets/images/prev.jpg" />
   <title>Rehanaf | Portofolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-  <script src="tailwind.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
   <style>
     svg.line,
     svg .line {
@@ -18,14 +18,18 @@
       stroke-linejoin: round;
       stroke-width: 1;
     }
+    svg.line:hover,
+    svg .line:hover {
+      stroke-width: 2;
+    }
   </style>
 </head>
 
-<body class="font-[Poppins]">
-  <nav class="bg-white shadow-lg h-16 flex justify-between items-center px-4 sticky top-0 z-50 rounded-b-3xl">
+<body class="font-[Poppins] bg-white dark:bg-gray-900 dark:text-gray-50">
+  <nav class="blur-shadow h-16 flex justify-between items-center px-4 sticky top-0 z-50 rounded-b-3xl">
     <span class="text-lg font-medium"><span class="text-sky-400">Rehan</span>af</span>
-    <button class="p-2 hover:text-sky-400">
-      <svg class='line w-6 h-6' stroke="currentColor" viewBox='0 0 24 24'>
+    <button class="p-2" id="ganti-tema">
+      <svg id="light-icon" class='hidden line w-6 h-6' stroke="currentColor" viewBox='0 0 24 24'>
         <path
           d='M12 18.5C15.5899 18.5 18.5 15.5899 18.5 12C18.5 8.41015 15.5899 5.5 12 5.5C8.41015 5.5 5.5 8.41015 5.5 12C5.5 15.5899 8.41015 18.5 12 18.5Z'>
         </path>
@@ -33,7 +37,7 @@
           d='M19.14 19.14L19.01 19.01M19.01 4.99L19.14 4.86L19.01 4.99ZM4.86 19.14L4.99 19.01L4.86 19.14ZM12 2.08V2V2.08ZM12 22V21.92V22ZM2.08 12H2H2.08ZM22 12H21.92H22ZM4.99 4.99L4.86 4.86L4.99 4.99Z'>
         </path>
       </svg>
-      <svg class='line w-8 h-8 hidden' viewBox='0 0 24 24'>
+      <svg id="dark-icon" class='line w-6 h-6' stroke="currentColor" viewBox='0 0 24 24'>
         <path
           d='M2.03009 12.42C2.39009 17.57 6.76009 21.76 11.9901 21.99C15.6801 22.15 18.9801 20.43 20.9601 17.72C21.7801 16.61 21.3401 15.87 19.9701 16.12C19.3001 16.24 18.6101 16.29 17.8901 16.26C13.0001 16.06 9.00009 11.97 8.98009 7.13996C8.97009 5.83996 9.24009 4.60996 9.73009 3.48996C10.2701 2.24996 9.62009 1.65996 8.37009 2.18996C4.41009 3.85996 1.70009 7.84996 2.03009 12.42Z'>
         </path>
@@ -44,59 +48,36 @@
   <main class="p-4">
     <section id="home" class="mt-12 mb-6">
       <div class="my-16">
-        <h1 class="text-4xl font-bold">Hii, I'm <br><span class="text-sky-400">Rehan Abu Faqih</span></h1>
-        <p class="text-slate-400 mt-2">Web Developer & Programmer</p>
-        <div class="mt-6">
-          <a href="#about" class="py-2 px-4 rounded-full text-white bg-sky-400 border-2 border-sky-400">about
-            Me</a>
+        <h1 class="text-3xl font-bold">Hii, I'm <br><span class="text-sky-400 text-5xl">Rehan Abu Faqih</span></h1>
+        <p class="text-slate-400 my-6">Fullstack Developer & Programmer</p>
+        <div class="mt-8 space-x-2">
+          <a href="#about" class="py-2 px-4 rounded-full text-white bg-sky-400 border-2 border-sky-400">About Me</a>
           <a target="_blank" href="https://github.com/Rehanaf"
-            class="py-2 px-4 border-2 border-sky-400 rounded-full text-sky-400">github</a>
+            class="py-2 px-4 border-2 border-sky-400 rounded-full text-sky-400">Github</a>
         </div>
       </div>
-      <div class="mb-6">
-        <img src="home.png" alt="home" class="w-48 m-auto">
+      <div class="mb-6 px-6">
+        <img src="assets/images/home.png" alt="home" class="w-full">
       </div>
-      <div class="mt-4 w-24 h-24 m-auto relative opacity-30">
-        <svg class='absolute line text-sky-400' viewBox='0 0 24 24' stroke="currentColor">
-          <path
-            d='M9.17005 19.2899L3.07005 7.6999C1.62005 4.9499 4.55005 1.9599 7.33005 3.3499L10.57 4.9699C11.47 5.4199 12.53 5.4199 13.43 4.9699L16.67 3.3499C19.45 1.9599 22.37 4.9499 20.93 7.6999L14.83 19.2899C13.63 21.5699 10.37 21.5699 9.17005 19.2899Z'>
-          </path>
-        </svg>
-        <svg class='absolute top-4 line text-sky-400' viewBox='0 0 24 24' stroke="currentColor">
-          <path
-            d='M9.17005 19.2899L3.07005 7.6999C1.62005 4.9499 4.55005 1.9599 7.33005 3.3499L10.57 4.9699C11.47 5.4199 12.53 5.4199 13.43 4.9699L16.67 3.3499C19.45 1.9599 22.37 4.9499 20.93 7.6999L14.83 19.2899C13.63 21.5699 10.37 21.5699 9.17005 19.2899Z'>
-          </path>
-        </svg>
-      </div>
+
     </section>
     <section id="about" class="scroll-m-16 my-12 py-6">
       <h2 class="text-3xl font-bold text-sky-400 py-6 text-center">About Me</h2>
       <div class="relative py-8">
-        <img class="ring-4 ring-sky-400 rounded-full w-44 m-auto" src="profil.jpg" alt="profil">
+        <img class="ring-4 ring-sky-400 rounded-full w-44 m-auto" src="assets/images/profil.jpg" alt="profil">
       </div>
       <div class="space-y-2">
-        <h1 class="text-xl font-bold">Hello World!</h1>
+        <h1 class="text-xl font-bold">Who am i?</h1>
         <p>Saya adalah seorang Pelajar, dan saya berusia 17 tahun.</p>
         <p>Aktifitas sehari hari saya adalah Bermain Komputer dan Menambah Ilmu Pengetahuan tentang teknologi.</p>
       </div>
-      <div class="mt-4 w-24 h-24 m-auto relative opacity-30">
-        <svg class='absolute line text-sky-400' viewBox='0 0 24 24' stroke="currentColor">
-          <path
-            d='M9.17005 19.2899L3.07005 7.6999C1.62005 4.9499 4.55005 1.9599 7.33005 3.3499L10.57 4.9699C11.47 5.4199 12.53 5.4199 13.43 4.9699L16.67 3.3499C19.45 1.9599 22.37 4.9499 20.93 7.6999L14.83 19.2899C13.63 21.5699 10.37 21.5699 9.17005 19.2899Z'>
-          </path>
-        </svg>
-        <svg class='absolute top-4 line text-sky-400' viewBox='0 0 24 24' stroke="currentColor">
-          <path
-            d='M9.17005 19.2899L3.07005 7.6999C1.62005 4.9499 4.55005 1.9599 7.33005 3.3499L10.57 4.9699C11.47 5.4199 12.53 5.4199 13.43 4.9699L16.67 3.3499C19.45 1.9599 22.37 4.9499 20.93 7.6999L14.83 19.2899C13.63 21.5699 10.37 21.5699 9.17005 19.2899Z'>
-          </path>
-        </svg>
-      </div>
+
     </section>
     <section id="skill" class="scroll-m-16 my-12 py-6">
       <h2 class="text-3xl font-bold text-sky-400 py-6 text-center">Skills</h2>
       <p class="text-center">My skills and Experience</p>
-      <div class="mt-8 space-y-2">
-        <div class="flex items-center border-slate-200 border-2 rounded-xl p-4 space-x-4">
+      <div class="mt-8 grid grid-cols-2 gap-4">
+        <div class="flex items-center blur-shadow rounded-3xl p-4 space-x-4">
           <svg class="w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
             <path fill="#E44D26" d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z" />
             <path fill="#F16529" d="M64 116.8l36.378-10.086 8.559-95.878H64z" />
@@ -107,7 +88,7 @@
           </svg>
           <span>HTML</span>
         </div>
-        <div class="flex items-center border-slate-200 border-2 rounded-xl p-4 space-x-4">
+        <div class="flex items-center blur-shadow rounded-3xl p-4 space-x-4">
           <svg class="w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
             <path fill="#1572B6" d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z" />
             <path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z" />
@@ -122,7 +103,7 @@
           </svg>
           <span>CSS</span>
         </div>
-        <div class="flex items-center border-slate-200 border-2 rounded-xl p-4 space-x-4">
+        <div class="flex items-center blur-shadow rounded-3xl p-4 space-x-4">
           <svg class="w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
             <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z" />
             <path fill="#323330"
@@ -130,61 +111,27 @@
           </svg>
           <span>Javascript</span>
         </div>
-        <div class="flex items-center border-slate-200 border-2 rounded-xl p-4 space-x-4">
+        <div class="flex items-center blur-shadow rounded-3xl p-4 space-x-4">
           <svg class="w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
             <path
               d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"
               fill="#38b2ac" />
           </svg>
-          <span>Tailwind CSS</span>
+          <span>Tailwind</span>
         </div>
       </div>
-      <div class="mt-4 w-24 h-24 m-auto relative opacity-30">
-        <svg class='absolute line text-sky-400' viewBox='0 0 24 24' stroke="currentColor">
-          <path
-            d='M9.17005 19.2899L3.07005 7.6999C1.62005 4.9499 4.55005 1.9599 7.33005 3.3499L10.57 4.9699C11.47 5.4199 12.53 5.4199 13.43 4.9699L16.67 3.3499C19.45 1.9599 22.37 4.9499 20.93 7.6999L14.83 19.2899C13.63 21.5699 10.37 21.5699 9.17005 19.2899Z'>
-          </path>
-        </svg>
-        <svg class='absolute top-4 line text-sky-400' viewBox='0 0 24 24' stroke="currentColor">
-          <path
-            d='M9.17005 19.2899L3.07005 7.6999C1.62005 4.9499 4.55005 1.9599 7.33005 3.3499L10.57 4.9699C11.47 5.4199 12.53 5.4199 13.43 4.9699L16.67 3.3499C19.45 1.9599 22.37 4.9499 20.93 7.6999L14.83 19.2899C13.63 21.5699 10.37 21.5699 9.17005 19.2899Z'>
-          </path>
-        </svg>
-      </div>
+
     </section>
     <section id="service" class="scroll-m-16 my-12 py-6">
       <h2 class="text-3xl font-bold text-sky-400 py-6 text-center">Service</h2>
-      <div class="mt-4 w-24 h-24 m-auto relative opacity-30">
-        <svg class='absolute line text-sky-400' viewBox='0 0 24 24' stroke="currentColor">
-          <path
-            d='M9.17005 19.2899L3.07005 7.6999C1.62005 4.9499 4.55005 1.9599 7.33005 3.3499L10.57 4.9699C11.47 5.4199 12.53 5.4199 13.43 4.9699L16.67 3.3499C19.45 1.9599 22.37 4.9499 20.93 7.6999L14.83 19.2899C13.63 21.5699 10.37 21.5699 9.17005 19.2899Z'>
-          </path>
-        </svg>
-        <svg class='absolute top-4 line text-sky-400' viewBox='0 0 24 24' stroke="currentColor">
-          <path
-            d='M9.17005 19.2899L3.07005 7.6999C1.62005 4.9499 4.55005 1.9599 7.33005 3.3499L10.57 4.9699C11.47 5.4199 12.53 5.4199 13.43 4.9699L16.67 3.3499C19.45 1.9599 22.37 4.9499 20.93 7.6999L14.83 19.2899C13.63 21.5699 10.37 21.5699 9.17005 19.2899Z'>
-          </path>
-        </svg>
-      </div>
+
     </section>
     <section id="contact" class="scroll-m-16 my-12 py-6">
       <h2 class="text-3xl font-bold text-sky-400 py-6 text-center">Contact</h2>
-      <div class="mt-4 w-24 h-24 m-auto relative opacity-30">
-        <svg class='absolute line text-sky-400' viewBox='0 0 24 24' stroke="currentColor">
-          <path
-            d='M9.17005 19.2899L3.07005 7.6999C1.62005 4.9499 4.55005 1.9599 7.33005 3.3499L10.57 4.9699C11.47 5.4199 12.53 5.4199 13.43 4.9699L16.67 3.3499C19.45 1.9599 22.37 4.9499 20.93 7.6999L14.83 19.2899C13.63 21.5699 10.37 21.5699 9.17005 19.2899Z'>
-          </path>
-        </svg>
-        <svg class='absolute top-4 line text-sky-400' viewBox='0 0 24 24' stroke="currentColor">
-          <path
-            d='M9.17005 19.2899L3.07005 7.6999C1.62005 4.9499 4.55005 1.9599 7.33005 3.3499L10.57 4.9699C11.47 5.4199 12.53 5.4199 13.43 4.9699L16.67 3.3499C19.45 1.9599 22.37 4.9499 20.93 7.6999L14.83 19.2899C13.63 21.5699 10.37 21.5699 9.17005 19.2899Z'>
-          </path>
-        </svg>
-      </div>
+
     </section>
   </main>
-  <div
-    class="md:hidden fixed bg-white bottom-0 w-full h-16 left-0 shadow-[0px_-10px_15px_-3px_rgba(0,0,0,0.1)] rounded-3xl flex items-center justify-around px-4">
+  <div class="md:hidden fixed bg-white/30 dark:bg-gray-800/30 backdrop-blur bottom-0 w-full h-16 left-0 shadow-[0px_-10px_15px_-3px_rgba(0,0,0,0.1)] dark:shadow-gray-800 rounded-3xl flex items-center justify-around px-4">
     <a class="p-2 hover:text-sky-400" href="#">
       <span class="sr-only">Home</span>
       <svg class='line w-6 h-6' stroke="currentColor" viewBox='0 0 24 24'>
@@ -243,6 +190,8 @@
       </svg>
     </a>
   </div>
+
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>
