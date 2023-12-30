@@ -47,8 +47,8 @@
       </button>
     </div>
   </nav>
-  <main>
-    <section id="home" class="mt-12 mb-6 px-4 container mx-auto md:flex md:justify-between">
+  <main class="container mx-auto px-4">
+    <section id="home" class="mt-12 mb-6 md:flex md:justify-between">
       <div class="my-16 md:my-24">
         <h1 class="text-3xl font-bold">Hii, I'm <br><span class="text-sky-400 text-5xl">Rehan Abu Faqih</span></h1>
         <p class="text-slate-400 my-6">Fullstack Developer & Programmer</p>
@@ -65,7 +65,7 @@
     </section>
     <section id="about" class="scroll-m-16 my-12 py-6">
       <h2 class="text-3xl font-bold text-sky-400 py-6 text-center">About Me</h2>
-      <div class="px-4 md:flex container mx-auto md:justify-center md:items-center md:space-x-12">
+      <div class="md:flex md:justify-center md:items-center md:space-x-12">
         <div class="py-8">
           <img class="ring-4 ring-sky-400 rounded-full w-44 md:w-64 m-auto" src="assets/images/profil.jpg" alt="profil">
         </div>
@@ -81,7 +81,7 @@
         </div>
       </div>
     </section>
-    <section id="skill" class="scroll-m-16 my-12 py-6 container mx-auto">
+    <section id="skill" class="scroll-m-16 my-12 py-6">
       <h2 class="text-3xl font-bold text-sky-400 py-6 text-center">Skills</h2>
       <p class="text-center">My skills and Experience</p>
       <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -130,9 +130,18 @@
       </div>
 
     </section>
-    <section id="service" class="scroll-m-16 my-12 py-6">
-      <h2 class="text-3xl font-bold text-sky-400 py-6 text-center">Service</h2>
-
+    <section id="portofolio" class="scroll-m-16 my-12 py-6">
+      <h2 class="text-3xl font-bold text-sky-400 py-6 text-center">Portofolio</h2>
+      <p class="text-center">Project single-player & multiplayer</p>
+      <div class="md:grid md:grid-cols-2 gap-4 mt-8">
+        <div class="shadow-lg">
+          <a href="https://boekhoudingdrie.my.id" class="rounded-lg">
+            <img class="w-full rounded-t-lg" src="assets/images/portofolio/e-kak.png" alt="E-Katalog">
+            <p class="text-center py-6">E-Katalog X AKL 3</p>
+          </a>
+        </div>
+        
+      </div>
     </section>
     <section id="contact" class="scroll-m-16 my-12 py-6">
       <h2 class="text-3xl font-bold text-sky-400 py-6 text-center">Contact</h2>
@@ -158,8 +167,8 @@
         <path d='M20.5899 22C20.5899 18.13 16.7399 15 11.9999 15C7.25991 15 3.40991 18.13 3.40991 22'></path>
       </svg>
     </a>
-    <a class="p-2 hover:text-sky-400" href="#skill">
-      <span class="sr-only">Skill</span>
+    <a class="p-2 hover:text-sky-400" href="#portofolio">
+      <span class="sr-only">Portofolio</span>
       <svg class='line w-6 h-6' stroke="currentColor" viewBox='0 0 24 24'>
         <path
           d='M22 16.7399V4.66994C22 3.46994 21.02 2.57994 19.83 2.67994H19.77C17.67 2.85994 14.48 3.92994 12.7 5.04994L12.53 5.15994C12.24 5.33994 11.76 5.33994 11.47 5.15994L11.22 5.00994C9.44 3.89994 6.26 2.83994 4.16 2.66994C2.97 2.56994 2 3.46994 2 4.65994V16.7399C2 17.6999 2.78 18.5999 3.74 18.7199L4.03 18.7599C6.2 19.0499 9.55 20.1499 11.47 21.1999L11.51 21.2199C11.78 21.3699 12.21 21.3699 12.47 21.2199C14.39 20.1599 17.75 19.0499 19.93 18.7599L20.26 18.7199C21.22 18.5999 22 17.6999 22 16.7399Z'>
